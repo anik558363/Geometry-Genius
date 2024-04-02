@@ -1,10 +1,10 @@
 
 
 function calculateRectangleArea() {
-    // get triangleBase
+    // get rectangleWidth
     const rectangleWidth = parseFloat(document.getElementById('rectangle_width').value);
 
-    //  get triangleHight
+    //  get rectangleLength
     const rectangleLength = parseFloat(document.getElementById('rectangle_length').value);
 
 
