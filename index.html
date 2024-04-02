@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- tailwind and daisy link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .google_font {
+            font-family: "Andika", sans-serif;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="google_font m-5">
+
+
+    <header></header>
+
+    <main>
+        <!-- main content container -->
+        <div class="flex flex-col md:flex-row gap-2">
+            <!-- shape card container -->
+            <div class="flex-1 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Triangle card -->
+                <div class="card bg-base-100 shadow-xl ">
+                    <figure><img class="md:px-4" src="images/triangle.png"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title mx-auto font-bold">Triangle</h2>
+                        <p class="text-[#414141] text-center">Area (A) = 0.5 X b X h</p>
+                        <div class="flex justify-center mx-auto">
+                            <input class="w-16 text-[20px] lg:text-2xl p-2 rounded-sm" type="text" name="" id="triangle_base" placeholder="b">
+                            <span class="mr-4 ml-2 mt-2">cm</span>
+                            <input class="w-16 text-[20px] lg:text-2xl p-2 rounded-sm" type="text" name="" id="triangle_hight" placeholder="h">
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full font-bold text-[#FFF]">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Area calculation container -->
+            <div id="area_container" class="lg:w-96 border-2 rounded-md border-gray-700 px-2">
+                <h3 class="text-3xl md:text-2xl font-bold text-[#111111CC] text-center mt-2 p-2">Area Calculation</h3>
+            </div>
+        </div>
+    </main>
 
 
     <script src="JS/triangle.js"></script>
