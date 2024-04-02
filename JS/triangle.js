@@ -14,14 +14,12 @@ function calculateTriangleArea() {
 
     const p = document.createElement('p');
 
-
-
-    if(typeof triangleBase !== 'number' || typeof triangleHight !== 'number'){
-        alert('give me valid integer')
+    if (isNaN(triangleHight) || isNaN(triangleBase)) {
+        alert ('Invalid Number');
     }else{
         const area = 0.5 * triangleBase * triangleHight;
 
-        p.innerText = `${sum++} Triangle  ${area} cm²`;
+        p.innerText = `${sum++}. Triangle  ${area} cm²`;
 
         areaContainer.appendChild(p);
 
