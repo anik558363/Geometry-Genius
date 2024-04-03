@@ -20,12 +20,12 @@ function calculatePentagonArea(){
     }else{
         const area = pentagonPerimeter * pentagonBase ;
 
-        p.innerText = `${sum++}. Parallelogram  ${area} cm²`;
+        p.innerText = `${sum++}. pentagon  ${area} cm²`;
 
         areaContainer.appendChild(p);
 
-        document.getElementById('parallelogram_base').value = '';
-        document.getElementById('parallelogram_width').value = '';
+        document.getElementById('pentagon_perimeter').value = '';
+        document.getElementById('pentagon_base').value = '';
 
     }
 

@@ -1,9 +1,9 @@
 function calculateRhombusArea() {
     // get pentagonPerimeter
-    const pentagonPerimeter = parseFloat(document.getElementById('pentagon_perimeter').value);
+    const parallelogramAse1 = parseFloat(document.getElementById('parallelogram_base1').value);
 
     //  get pentagonBase
-    const pentagonBase = parseFloat(document.getElementById('pentagon_base').value);
+    const parallelogramBase2 = parseFloat(document.getElementById('parallelogram_base2').value);
 
     // get areaContainer
 
@@ -13,17 +13,17 @@ function calculateRhombusArea() {
 
     const p = document.createElement('p');
 
-    if (isNaN(pentagonPerimeter) || isNaN(pentagonBase)) {
+    if (isNaN(parallelogramAse1) || isNaN(parallelogramBase2)) {
         alert ('Invalid Number');
     }else{
-        const area = 0.5 * pentagonPerimeter * pentagonBase;
+        const area = 0.5 * parallelogramAse1 * parallelogramBase2;
 
         p.innerText = `${sum++}. Rhombus  ${area} cm²`;
 
         areaContainer.appendChild(p);
 
-        document.getElementById('pentagon_perimeter').value = '';
-        document.getElementById('pentagon_base').value = '';
+        document.getElementById('parallelogram_base1').value = '';
+        document.getElementById('parallelogram_base2').value = '';
 
     }
 

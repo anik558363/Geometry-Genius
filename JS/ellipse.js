@@ -23,11 +23,11 @@ function calculateEllipseArea() {
         const area = parseFloat(areaFloat.toFixed(2))
 
 
-        p.innerText = `${sum++}. Parallelogram  ${area} cm²`;
+        p.innerText = `${sum++}. Ellipse  ${area} cm²`;
 
         areaContainer.appendChild(p);
 
-        document.getElementById('parallelogram_a_length').value = '';
+        document.getElementById('ellipse_a_length').value = '';
         document.getElementById('ellipse_b_length').value = '';
 
     }
